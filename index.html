@@ -4,22 +4,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My LIFF v2</title>
   <style>
-#bg {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-
-  /* Preserve aspet ratio */
-  min-width: 100%;
-  min-height: 100%;
-}
+    #pictureUrl { display: block; margin: 0 auto }
   </style>
 </head>
 <body>
-  <img id="pictureUrl" id="bg" alt="">
+  <img id="pictureUrl" width="25%">
   <p id="userId"></p>
   <p id="displayName"></p>
   <p id="statusMessage"></p>
+  <script src="https://static.line-scdn.net/liff/edge/versions/2.6.0/sdk.js"></script>
   <script>
     function runApp() {
       liff.getProfile().then(profile => {
