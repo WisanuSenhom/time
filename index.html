@@ -5,17 +5,14 @@
   <title>My LIFF v2</title>
   <style>
     #pictureUrl { display: block; margin: 0 auto }
-</style>
+  </style>
 </head>
 <body>
-<div>
+  <img id="pictureUrl" width="25%">
   <p id="userId"></p>
-  <h1 id="displayName"></h1>
+  <p id="displayName"></p>
   <p id="statusMessage"></p>
-  <img id="pictureUrl">
-  </div>  
-  
-  
+  <p id="getDecodedIDToken"></p>
   <script src="https://static.line-scdn.net/liff/edge/versions/2.6.0/sdk.js"></script>
   <script>
     function runApp() {
@@ -24,6 +21,7 @@
         document.getElementById("userId").innerHTML = '<b>UserId:</b> ' + profile.userId;
         document.getElementById("displayName").innerHTML = '<b>DisplayName:</b> ' + profile.displayName;
         document.getElementById("statusMessage").innerHTML = '<b>StatusMessage:</b> ' + profile.statusMessage;
+        document.getElementById("getDecodedIDToken").innerHTML = '<b>Email:</b> ' + liff.getDecodedIDToken().email;
       }).catch(err => console.error(err));
     }
     liff.init({ liffId: "1654797991-WjL7A073" }, () => {
