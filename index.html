@@ -17,18 +17,23 @@
           <div class="jumbotron">
             <div class="row text-center">
               <div class="text-center col-12">
-                <h2>Request a free quote</h2>
+                <h2>ระบบลงเวลาการปฏิบัติงาน</h2>
               </div>
               <div class="text-center col-12">
                 <!-- CONTACT FORM https://github.com/jonmbake/bootstrap3-contact-form -->
                 <form id="feedbackForm" class="text-center">
                   <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" aria-describedby="nameHelp">
-                    <span id="nameHelp" class="form-text text-muted" style="display: none;">Please enter your name.</span>
+                    <label for="name">..:: ประเภทการลงเวลาปฏิบัติราชการ ::</label>..
+                    <select class="form-control" id="typea">
+  <option value="ปกติ">ปกติ</option>
+  <option value="ไปราชการ">ไปราชการ</option>
+  <option value="ราชการ">ไปช่วยราชการ</option>
+  <option value="มาช่วยราชการ">มาช่วยราชการ</option>
+  <option value="อื่นๆ">อื่นๆ โปรดระบุ</option>
+</select>
                   </div>
                   <div class="form-group">
-                    <textarea rows="3" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp"></textarea>
+                    <textarea rows="3" cols="100" class="form-control" id="nte" name="nte" placeholder="รายละเอียดเพิ่มเติม" ></textarea>
                   </div>
 					<div id="cin" class="invisible"><button type="button" class="btn btn-success btn-lg" onclick="getLocation()">Check-In</button></div>
 <div id="cout" class="invisible"><button id="cout" type="button" class="btn btn-danger btn-lg" onclick="getLocationOut()">Check-Out</button></div>
